@@ -1,0 +1,52 @@
+{
+    "name": "daniellefence/dropdown",
+    "version": "1.0.0",
+    "description": "",
+    "keywords": [
+        "daniellefence",
+        "dropdown"
+    ],
+    "homepage": "https://github.com/daniellefence/dropdown",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Shane Barron",
+            "email": "sbarron@daniellefence.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "daniellefence/buttons": "*",
+        "daniellefence/icons": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Daniellefence\\Dropdown\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Daniellefence\\Dropdown\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Daniellefence\\Dropdown\\DropdownServiceProvider"
+            ],
+            "aliases": {
+                "Dropdown": "Daniellefence\\Dropdown\\DropdownFacade"
+            }
+        }
+    }
+}
