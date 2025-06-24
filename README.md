@@ -1,4 +1,6 @@
-# Laravel Blade dropdown component with support for links and click actions.
+# DanielleFence Dropdown
+
+DaisyUI‑powered dropdown Blade component for links and actions.
 
 A flexible dropdown Blade component for Laravel, supporting both href links and interactive button actions, with full integration into the DanielleFence component suite.
 
